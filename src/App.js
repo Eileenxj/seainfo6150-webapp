@@ -10,6 +10,13 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       // put data fetching code here!
+       // performs a GET request
+       const responseFetchArticles = await fetch(
+        "http://demo1390455.mockable.io/articles"
+      );
+      const responseJson = await responseFetchArticles.json();
+      setFetchedData(responseJson);
+      // console.log(responseJson["181122102925-statue-of-liberty-crown"])
     };
 
     if (isEmpty(fetchedData)) {
