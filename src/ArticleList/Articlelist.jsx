@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const Articlelist = (props) => {
     const myList = props.list;
-    console.log("myList: ### ", myList)
     return (
         <div>
           <ul>

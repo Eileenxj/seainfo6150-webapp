@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const ArticleListItem = props => {
     const myArticle = props.article;
-    console.log("myArticle: ### ", myArticle)
   return (
     <>
         <h2>
