@@ -7,11 +7,9 @@ const Articlelist = (props) => {
     const myList = props.list;
     return (
         <div className={styles.list}>
-          <ul>
             {myList.map((listItem) => (
               <ArticleListItem article={listItem}></ArticleListItem>
             ))}
-          </ul>
         </div>
     );
   };
