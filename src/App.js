@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import ArticleList from "./ArticleList/ArticleList.jsx";
 import { isEmpty } from "lodash";
-
+import AddingMachine from './component-examples/AddingMachine/AddingMachine.jsx'
 function App() {
   const [fetchedData, setFetchedData] = useState();
 
@@ -23,6 +23,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/articlelist"><ArticleList articles={fetchedData} /></Route>
+        <Route exact path="/addingmachine"><AddingMachine startNum={0}/></Route>
       </Switch>
     </div>
   );
