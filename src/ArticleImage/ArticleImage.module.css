@@ -1,0 +1,24 @@
+
+  .image {
+    border: 10px solid #c00;
+    border-radius: 50%;
+    width: 150px;
+    height: 90px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  @media screen and (min-width: 800px) {
+    .image {
+        width: 130px;
+        height: 78px;
+    }
+  }
+  
+  @media screen and (min-width: 1150px) {
+    .image {
+        width: 160px;
+        height: 96px;
+    }
+  }
+  
